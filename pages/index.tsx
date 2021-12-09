@@ -1,6 +1,10 @@
 import Layout from "components/Layout";
-import { Sliders, SliderProduct } from "components/Sliders";
+// import { Sliders as SlidersCommon, SliderProduct } from "components/Sliders";
+import dynamic from "next/dynamic";
 import Link from "next/link";
+
+const Sliders = dynamic(() => import('../components/Sliders'), { ssr: false });
+const SliderProduct = dynamic(() => import('../components/SliderProduct'), { ssr: false });
 
 export default function Home() {
   return (
@@ -17,7 +21,7 @@ export default function Home() {
             <ul className="list-inline list-checked list-checked-primary" style={{paddingRight: '14.5rem', paddingLeft: '14.5rem'}}>
               {
                 ['Jerawat','Kulit Pucat','Kulit Berminyak', 'Kulit Bernoda','Strechmark','Kulit Kering','Penuaan Dini'].map((item, index) => (
-                  <li className="list-inline-item my-2 mx-3">
+                  <li key={`button-pengenalan-${index}`} className="list-inline-item my-2 mx-3">
                     <button type="button" className="btn btn-outline-primary btn-lg rounded-pill px-5">{item}</button>
                   </li>
                 ))

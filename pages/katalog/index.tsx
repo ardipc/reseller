@@ -373,7 +373,7 @@ export default function Katalog() {
               <div className="row row-cols-sm-2 row-cols-md-3 mb-10">
                 {
                   [1, 1, 1, 1, 1, 1, 1, 1, 1].map((item, index) => (
-                    <Product />
+                    <Product key={`slidf-${index}`} />
                   ))
                 }
               </div>

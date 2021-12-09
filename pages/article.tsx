@@ -1,6 +1,9 @@
 import Layout from "components/Layout";
-import { SliderProduct } from "components/Sliders";
+import dynamic from "next/dynamic";
+// import { SliderProduct } from "components/Sliders";
 import Image from "next/image";
+
+const SliderProduct = dynamic(() => import('../components/SliderProduct'), { ssr: false });
 
 export default function Article() {
   return (
