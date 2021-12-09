@@ -66,13 +66,13 @@ export default function Katalog() {
                         <div className="d-grid gap-2">
                           {/* Checkboxes */}
                           <div className="form-check">
-                            <input className="form-check-input" type="checkbox" defaultValue id="menCheckbox" defaultChecked />
+                            <input className="form-check-input" type="checkbox"  id="menCheckbox" defaultChecked />
                             <label className="form-check-label d-flex" htmlFor="menCheckbox">Men <span className="ms-auto">(73)</span></label>
                           </div>
                           {/* End Checkboxes */}
                           {/* Checkboxes */}
                           <div className="form-check">
-                            <input className="form-check-input" type="checkbox" defaultValue id="womenCheckbox" defaultChecked />
+                            <input className="form-check-input" type="checkbox"  id="womenCheckbox" defaultChecked />
                             <label className="form-check-label d-flex" htmlFor="womenCheckbox">Women <span className="ms-auto">(51)</span></label>
                           </div>
                           {/* End Checkboxes */}
@@ -83,31 +83,31 @@ export default function Katalog() {
                         <div className="d-grid gap-2">
                           {/* Checkboxes */}
                           <div className="form-check">
-                            <input className="form-check-input" type="checkbox" defaultValue id="adidasCheckbox" />
+                            <input className="form-check-input" type="checkbox"  id="adidasCheckbox" />
                             <label className="form-check-label d-flex" htmlFor="adidasCheckbox">Adidas <span className="ms-auto">(16)</span></label>
                           </div>
                           {/* End Checkboxes */}
                           {/* Checkboxes */}
                           <div className="form-check">
-                            <input className="form-check-input" type="checkbox" defaultValue id="newBalanceCheckbox" />
+                            <input className="form-check-input" type="checkbox"  id="newBalanceCheckbox" />
                             <label className="form-check-label d-flex" htmlFor="newBalanceCheckbox">New Balance <span className="ms-auto">(8)</span></label>
                           </div>
                           {/* End Checkboxes */}
                           {/* Checkboxes */}
                           <div className="form-check">
-                            <input className="form-check-input" type="checkbox" defaultValue id="nikeCheckbox" />
+                            <input className="form-check-input" type="checkbox"  id="nikeCheckbox" />
                             <label className="form-check-label d-flex" htmlFor="nikeCheckbox">Nike <span className="ms-auto">(35)</span></label>
                           </div>
                           {/* End Checkboxes */}
                           {/* Checkboxes */}
                           <div className="form-check">
-                            <input className="form-check-input" type="checkbox" defaultValue id="fredPerryCheckbox" />
+                            <input className="form-check-input" type="checkbox"  id="fredPerryCheckbox" />
                             <label className="form-check-label d-flex" htmlFor="fredPerryCheckbox">Fred Perry <span className="ms-auto">(5)</span></label>
                           </div>
                           {/* End Checkboxes */}
                           {/* Checkboxes */}
                           <div className="form-check">
-                            <input className="form-check-input" type="checkbox" defaultValue id="tnfCheckbox" />
+                            <input className="form-check-input" type="checkbox"  id="tnfCheckbox" />
                             <label className="form-check-label d-flex" htmlFor="tnfCheckbox">The North Face <span className="ms-auto">(1)</span></label>
                           </div>
                           {/* End Checkboxes */}
@@ -117,13 +117,13 @@ export default function Katalog() {
                           <div className="d-grid gap-2">
                             {/* Checkboxes */}
                             <div className="form-check">
-                              <input className="form-check-input" type="checkbox" defaultValue id="gucciCheckbox" />
+                              <input className="form-check-input" type="checkbox"  id="gucciCheckbox" />
                               <label className="form-check-label d-flex" htmlFor="gucciCheckbox">Gucci <span className="ms-auto">(5)</span></label>
                             </div>
                             {/* End Checkboxes */}
                             {/* Checkboxes */}
                             <div className="form-check">
-                              <input className="form-check-input" type="checkbox" defaultValue id="mangoCheckbox" />
+                              <input className="form-check-input" type="checkbox"  id="mangoCheckbox" />
                               <label className="form-check-label d-flex" htmlFor="mangoCheckbox">Mango <span className="ms-auto">(1)</span></label>
                             </div>
                             {/* End Checkboxes */}
@@ -142,31 +142,31 @@ export default function Katalog() {
                         <div className="d-grid gap-2">
                           {/* Checkboxes */}
                           <div className="form-check">
-                            <input className="form-check-input" type="checkbox" defaultValue id="sizeSCheckbox" defaultChecked />
+                            <input className="form-check-input" type="checkbox"  id="sizeSCheckbox" defaultChecked />
                             <label className="form-check-label d-flex" htmlFor="sizeSCheckbox">S <span className="ms-auto">(27)</span></label>
                           </div>
                           {/* End Checkboxes */}
                           {/* Checkboxes */}
                           <div className="form-check">
-                            <input className="form-check-input" type="checkbox" defaultValue id="sizeMCheckbox" />
+                            <input className="form-check-input" type="checkbox"  id="sizeMCheckbox" />
                             <label className="form-check-label d-flex" htmlFor="sizeMCheckbox">M <span className="ms-auto">(18)</span></label>
                           </div>
                           {/* End Checkboxes */}
                           {/* Checkboxes */}
                           <div className="form-check">
-                            <input className="form-check-input" type="checkbox" defaultValue id="sizeLCheckbox" defaultChecked />
+                            <input className="form-check-input" type="checkbox"  id="sizeLCheckbox" defaultChecked />
                             <label className="form-check-label d-flex" htmlFor="sizeLCheckbox">L <span className="ms-auto">(0)</span></label>
                           </div>
                           {/* End Checkboxes */}
                           {/* Checkboxes */}
                           <div className="form-check">
-                            <input className="form-check-input" type="checkbox" defaultValue id="sizeXLCheckbox" />
+                            <input className="form-check-input" type="checkbox"  id="sizeXLCheckbox" />
                             <label className="form-check-label d-flex" htmlFor="sizeXLCheckbox">XL <span className="ms-auto">(1)</span></label>
                           </div>
                           {/* End Checkboxes */}
                           {/* Checkboxes */}
                           <div className="form-check">
-                            <input className="form-check-input" type="checkbox" defaultValue id="sizeXXLCheckbox" />
+                            <input className="form-check-input" type="checkbox"  id="sizeXXLCheckbox" />
                             <label className="form-check-label d-flex" htmlFor="sizeXXLCheckbox">XXL <span className="ms-auto">(2)</span></label>
                           </div>
                           {/* End Checkboxes */}
@@ -177,31 +177,31 @@ export default function Katalog() {
                         <div className="d-grid gap-2">
                           {/* Checkboxes */}
                           <div className="form-check">
-                            <input className="form-check-input" type="checkbox" defaultValue id="tshirtCheckbox" defaultChecked />
+                            <input className="form-check-input" type="checkbox"  id="tshirtCheckbox" defaultChecked />
                             <label className="form-check-label d-flex" htmlFor="tshirtCheckbox">T-shirt <span className="ms-auto">(73)</span></label>
                           </div>
                           {/* End Checkboxes */}
                           {/* Checkboxes */}
                           <div className="form-check">
-                            <input className="form-check-input" type="checkbox" defaultValue id="shoesCheckbox" />
+                            <input className="form-check-input" type="checkbox"  id="shoesCheckbox" />
                             <label className="form-check-label d-flex" htmlFor="shoesCheckbox">Shoes <span className="ms-auto">(0)</span></label>
                           </div>
                           {/* End Checkboxes */}
                           {/* Checkboxes */}
                           <div className="form-check">
-                            <input className="form-check-input" type="checkbox" defaultValue id="accessoriesCheckbox" defaultChecked />
+                            <input className="form-check-input" type="checkbox"  id="accessoriesCheckbox" defaultChecked />
                             <label className="form-check-label d-flex" htmlFor="accessoriesCheckbox">Accessories <span className="ms-auto">(51)</span></label>
                           </div>
                           {/* End Checkboxes */}
                           {/* Checkboxes */}
                           <div className="form-check">
-                            <input className="form-check-input" type="checkbox" defaultValue id="topsCheckbox" defaultChecked />
+                            <input className="form-check-input" type="checkbox"  id="topsCheckbox" defaultChecked />
                             <label className="form-check-label d-flex" htmlFor="topsCheckbox">Tops <span className="ms-auto">(5)</span></label>
                           </div>
                           {/* End Checkboxes */}
                           {/* Checkboxes */}
                           <div className="form-check">
-                            <input className="form-check-input" type="checkbox" defaultValue id="bottomCheckbox" />
+                            <input className="form-check-input" type="checkbox"  id="bottomCheckbox" />
                             <label className="form-check-label d-flex" htmlFor="bottomCheckbox">Bottom <span className="ms-auto">(11)</span></label>
                           </div>
                           {/* End Checkboxes */}
@@ -211,19 +211,19 @@ export default function Katalog() {
                           <div className="d-grid gap-2">
                             {/* Checkboxes */}
                             <div className="form-check">
-                              <input className="form-check-input" type="checkbox" defaultValue id="shortsCheckbox" />
+                              <input className="form-check-input" type="checkbox"  id="shortsCheckbox" />
                               <label className="form-check-label d-flex" htmlFor="shortsCheckbox">Shorts <span className="ms-auto">(6)</span></label>
                             </div>
                             {/* End Checkboxes */}
                             {/* Checkboxes */}
                             <div className="form-check">
-                              <input className="form-check-input" type="checkbox" defaultValue id="hatsCheckbox" />
+                              <input className="form-check-input" type="checkbox"  id="hatsCheckbox" />
                               <label className="form-check-label d-flex" htmlFor="hatsCheckbox">Hats <span className="ms-auto">(3)</span></label>
                             </div>
                             {/* End Checkboxes */}
                             {/* Checkboxes */}
                             <div className="form-check">
-                              <input className="form-check-input" type="checkbox" defaultValue id="socksCheckbox" />
+                              <input className="form-check-input" type="checkbox"  id="socksCheckbox" />
                               <label className="form-check-label d-flex" htmlFor="socksCheckbox">Socks <span className="ms-auto">(8)</span></label>
                             </div>
                             {/* End Checkboxes */}
@@ -242,7 +242,7 @@ export default function Katalog() {
                         <div className="d-grid gap-2">
                           {/* Checkboxes */}
                           <div className="form-check">
-                            <input className="form-check-input" type="checkbox" defaultValue id="1starCheckbox" />
+                            <input className="form-check-input" type="checkbox"  id="1starCheckbox" />
                             <label className="form-check-label" htmlFor="1starCheckbox">
                               <span className="d-flex gap-1">
                                 <img src="/assets/svg/illustrations/star.svg" alt="Review rating" style={{width: 16}} />
@@ -257,7 +257,7 @@ export default function Katalog() {
                           {/* End Checkboxes */}
                           {/* Checkboxes */}
                           <div className="form-check">
-                            <input className="form-check-input" type="checkbox" defaultValue id="2starCheckbox" />
+                            <input className="form-check-input" type="checkbox"  id="2starCheckbox" />
                             <label className="form-check-label" htmlFor="2starCheckbox">
                               <span className="d-flex gap-1">
                                 <img src="/assets/svg/illustrations/star.svg" alt="Review rating" style={{width: 16}} />
@@ -272,7 +272,7 @@ export default function Katalog() {
                           {/* End Checkboxes */}
                           {/* Checkboxes */}
                           <div className="form-check">
-                            <input className="form-check-input" type="checkbox" defaultValue id="3starCheckbox" />
+                            <input className="form-check-input" type="checkbox"  id="3starCheckbox" />
                             <label className="form-check-label" htmlFor="3starCheckbox">
                               <span className="d-flex gap-1">
                                 <img src="/assets/svg/illustrations/star.svg" alt="Review rating" style={{width: 16}} />
@@ -287,7 +287,7 @@ export default function Katalog() {
                           {/* End Checkboxes */}
                           {/* Checkboxes */}
                           <div className="form-check">
-                            <input className="form-check-input" type="checkbox" defaultValue id="4starCheckbox" />
+                            <input className="form-check-input" type="checkbox"  id="4starCheckbox" />
                             <label className="form-check-label" htmlFor="4starCheckbox">
                               <span className="d-flex gap-1">
                                 <img src="/assets/svg/illustrations/star.svg" alt="Review rating" style={{width: 16}} />
@@ -302,7 +302,7 @@ export default function Katalog() {
                           {/* End Checkboxes */}
                           {/* Checkboxes */}
                           <div className="form-check">
-                            <input className="form-check-input" type="checkbox" defaultValue id="5starCheckbox" />
+                            <input className="form-check-input" type="checkbox"  id="5starCheckbox" />
                             <label className="form-check-label" htmlFor="5starCheckbox">
                               <span className="d-flex gap-1">
                                 <img src="/assets/svg/illustrations/star.svg" alt="Review rating" style={{width: 16}} />
