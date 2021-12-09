@@ -1,39 +1,31 @@
 import Head from 'next/head'
-import Header from 'components/Header'
+import { Fragment } from 'react'
+import Script from 'next/script'
+import Navbar from './Navbar'
+import Footer from './Footer'
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <>
+    <Fragment>
       <Head>
-        <title>With Iron Session</title>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <title>Shop</title>
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:wght@400;600&display=swap" />
+        <link rel="stylesheet" href="/assets/css/vendor.min.css" />
+        <link rel="stylesheet" href="/assets/vendor/bootstrap-icons/font/bootstrap-icons.css" />
+        <link rel="stylesheet" href='/assets/vendor/aos/dist/aos.css' />
+        <link rel="stylesheet" href="/assets/css/theme.min.css" />
+        <link rel="stylesheet" href="/assets/css/style.css" />
       </Head>
-      <style jsx global>{`
-        *,
-        *::before,
-        *::after {
-          box-sizing: border-box;
-        }
-
-        body {
-          margin: 0;
-          color: #333;
-          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-            'Helvetica Neue', Arial, Noto Sans, sans-serif, 'Apple Color Emoji',
-            'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-        }
-
-        .container {
-          max-width: 65rem;
-          margin: 1.5rem auto;
-          padding-left: 1rem;
-          padding-right: 1rem;
-        }
-      `}</style>
-      <Header />
-
-      <main>
-        <div className="container">{children}</div>
-      </main>
-    </>
+      <Navbar />
+      <Fragment>{children}</Fragment>
+      <Footer />
+      <Script src="/assets/js/vendor.min.js" strategy="beforeInteractive"></Script>
+      <Script src="/assets/vendor/aos/dist/aos.js" strategy="beforeInteractive"></Script>
+      <Script src="/assets/js/theme.min.js" strategy="beforeInteractive"></Script>
+      <Script src="/assets/js/main.js" strategy="beforeInteractive"></Script>
+    </Fragment>
   )
 }

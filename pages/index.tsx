@@ -1,59 +1,87 @@
-import Layout from 'components/Layout'
-import Image from 'next/image'
+import Layout from "components/Layout";
+import { Sliders, SliderProduct } from "components/Sliders";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <Layout>
-      <h1>
-        <span style={{ marginRight: '.3em', verticalAlign: 'middle' }}>
-          <Image src="/GitHub-Mark-32px.png" width="32" height="32" alt="" />
-        </span>
-        <a href="https://github.com/vvo/iron-session">iron-session</a> -
-        Authentication example
-      </h1>
+      <main id="content" role="main">
+        <div className="container">
+          <Sliders />
+        </div>
 
-      <p>
-        This example creates an authentication system that uses a{' '}
-        <b>signed and encrypted cookie to store session data</b>.
-      </p>
+        <div className="container">
+          <div className="text-center m-3">
+            <h1 className="mb-3">Apa Masalah Kulitmu ?</h1>
+            {/* List Checked */}
+            <ul className="list-inline list-checked list-checked-primary" style={{paddingRight: '14.5rem', paddingLeft: '14.5rem'}}>
+              {
+                ['Jerawat','Kulit Pucat','Kulit Berminyak', 'Kulit Bernoda','Strechmark','Kulit Kering','Penuaan Dini'].map((item, index) => (
+                  <li className="list-inline-item my-2 mx-3">
+                    <button type="button" className="btn btn-outline-primary btn-lg rounded-pill px-5">{item}</button>
+                  </li>
+                ))
+              }
+            </ul>
+            {/* End List Checked */}
+          </div>
+        </div>
 
-      <p>
-        It uses current best practices as for authentication in the Next.js
-        ecosystem:
-        <br />
-        1. <b>no `getInitialProps`</b> to ensure every page is static
-        <br />
-        2. <b>`useUser` hook</b> together with `
-        <a href="https://swr.now.sh/">swr`</a> for data fetching
-      </p>
+        <div className="container mt-5 p-5">
+          <div className="row justify-content-lg-between align-items-md-center border">
+            <div className="col-md-6 col-lg-5 content-space-1 content-space-md-2 p-8">
+              <h2 className="mb-4">Apa Sih Jerawat Itu ?</h2>
+              <p>Kondisi kulit yang terjadi ketika folikel rambut tersumbat minyak dan sel-sel kulit mati. Jerawat paling umum terjadi pada remaja dan dewasa muda. Gejala mulai dari komedo kepala hitam hingga jerawat nanah atau benjolan besar, kemerahan, dan lembut.</p>
+              <a href="/article" className="btn btn-primary rounded-pill px-4">Jerawat</a>
+            </div>
+            <div className="col-md-6 p-8">
+              <div className="bg-img-center h-100 rounded-2" style={{ backgroundImage: 'url(/assets/img/jerawat.jpg)', minHeight: '30rem' }} />
+            </div>
+          </div>
+          
+          <div className="content-space-t-1 content-space-t-lg-1"></div>
+          
+          <div className="row justify-content-lg-between align-items-md-center border">
+            <div className="col-md-6 col-lg-5 order-md-2 content-space-1 content-space-md-2 p-8">
+              <h2 className="mb-4">Apa Itu Kulit Kering ?</h2>
+              <p>Kulit kering dapat disebabkan oleh hal-hal di luar penyakit. Contohnya meliputi lingkungan yang kering, sering mencuci tangan, hidrasi yang tidak memadai, berenang di kolam renang yang mengandung klorin, atau pekerjaan berat yang menggunakan tangan seperti mekanik atau bertani.</p>
+              <a href="/article" className="btn btn-primary rounded-pill px-4">Kulit Kering</a>
+            </div>
+            <div className="col-md-6 order-md-1 p-8">
+              <div className="bg-img-center h-100 rounded-2" style={{ backgroundImage: 'url(/assets/img/kulit-kering2.jpg)', minHeight: '30rem' }} />
+            </div>
+          </div>
+          
+          <div className="content-space-t-1 content-space-t-lg-1"></div>
+          
+          <div className="row justify-content-lg-between align-items-md-center border">
+            <div className="col-md-6 col-lg-5 content-space-1 content-space-md-2 p-8">
+              <h2 className="mb-4">Penuaan Dini ?</h2>
+              <p>Penuaan kulit yang prosesnya jauh lebih cepat dari yang biasanya. Sering dijumpai orang-orang yang bisa dibilang masih muda tapi sudah terlihat tua karena timbulnya kerutan-kerutan di wajah.</p>
+              <a href="/article" className="btn btn-primary rounded-pill px-4">Penuaan Dini</a>
+            </div>
+            <div className="col-md-6 p-8">
+              <div className="bg-img-center h-100 rounded-2" style={{ backgroundImage: 'url(/assets/img/penuaan.jpg)', minHeight: '30rem' }} />
+            </div>
+          </div>
+        </div>
 
-      <h2>Features</h2>
-
-      <ul>
-        <li>Logged in status synchronized between browser windows/tabs</li>
-        <li>Layout based on logged in status</li>
-        <li>All pages are static</li>
-        <li>Session data is signed and encrypted in a cookie</li>
-      </ul>
-
-      <h2>Steps to test the functionality:</h2>
-
-      <ol>
-        <li>Click login and enter your GitHub username.</li>
-        <li>
-          Click home and click profile again, notice how your session is being
-          used through a token stored in a cookie.
-        </li>
-        <li>
-          Click logout and try to go to profile again. You&apos;ll get
-          redirected to the `/login` route.
-        </li>
-      </ol>
-      <style jsx>{`
-        li {
-          margin-bottom: 0.5rem;
-        }
-      `}</style>
+        <div className="container content-space-1">
+          {/* Title */}
+          <div className="mb-6 text-center">
+            <h2>Our Product</h2>
+          </div>
+          {/* End Title */}
+          <div className="row row-cols-sm-2 row-cols-md-3 row-cols-lg-4 mb-3">
+            <SliderProduct />
+          </div>
+          {/* End Row */}
+          <div className="text-center">
+            <a className="btn btn-outline-primary btn-transition rounded-pill" href="#">View all products</a>
+          </div>
+        </div>
+    
+      </main>
     </Layout>
   )
 }
